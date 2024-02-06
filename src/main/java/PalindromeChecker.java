@@ -57,13 +57,11 @@ public String reverse(String str)
 }
 
 public String noSpaces(String sWord){
-  String cool = "";
-  for(int i = 0; i < sWord.length(); i++){
-    if(!sWord.substring(i,i+1).equals(" ")){
-      cool += sWord.substring(i,i+1);
-    }
-  }
-  return cool;
+ String result = new String();
+  for(int i = 0; i < sWord.length(); i++)
+     if(!sWord.substring(i,i+1).equals(" "))
+       result=result + sWord.substring(i,i+1);
+  return result;
 }
 
 public String onlyLetters(String sString){
