@@ -39,7 +39,7 @@ public boolean palindrome(String word)
 {
     String fine = noSpaces(word);
     String fine1 = onlyLetters(fine);
-    String fine2 = noCapitals(fine1);
+    String fine2 = fine1.toLowerCase();
     if(reverse(fine2).equals(fine2)){
     return true;
   }else{
@@ -72,8 +72,4 @@ public String onlyLetters(String sString){
     }
   }
   return thing;
-}
-
-public String noCapitals(String vWord){
-  return vWord.toLowerCase();
 }
