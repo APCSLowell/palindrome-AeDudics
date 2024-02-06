@@ -51,7 +51,7 @@ public String reverse(String str)
 {
     String sNew = new String();
     for(int i = str.length()-1; i >= 0; i--){
-    sNew += str.substring(i,i+1);
+      sNew += str.substring(i,i+1);
   }
     return sNew;
 }
@@ -68,7 +68,7 @@ public String onlyLetters(String sString){
   String thing = "";
   for(int i = 0; i < sString.length(); i++){
     if(Character.isLetter(sString.charAt(i))){
-      thing += sString.substring(i,i+1);
+      thing += sString.charAt(i);
     }
   }
   return thing;
