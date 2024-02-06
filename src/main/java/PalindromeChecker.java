@@ -37,15 +37,16 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-    noSpaces(word);
-    onlyLetters(word);
-    noCapitals(word);
-    if(reverse(word).equals(word)){
+    String fine = noSpaces(word);
+    fine = onlyLetters(fine);
+    fine = noCapitals(fine);
+    if(reverse(fine).equals(fine)){
     return true;
   }else{
     return false;
   }
 }
+  
 public String reverse(String str)
 {
     String sNew = new String();
