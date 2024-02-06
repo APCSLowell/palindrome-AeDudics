@@ -38,9 +38,9 @@ public void tester()
 public boolean palindrome(String word)
 {
     String fine = noSpaces(word);
-    fine = onlyLetters(fine);
-    fine = noCapitals(fine);
-    if(reverse(fine).equals(fine)){
+    String fine1 = onlyLetters(fine);
+    String fine2 = noCapitals(fine1);
+    if(reverse(fine2).equals(fine2)){
     return true;
   }else{
     return false;
